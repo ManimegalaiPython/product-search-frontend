@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://manipython3.pythonanywhere.com/api/', // production server
+  baseURL: 'https://manipython3.pythonanywhere.com/api/',
 });
 
 // Search products
