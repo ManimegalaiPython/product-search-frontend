@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import SearchBar   from './components/SearchBar';
 import ProductList from './components/ProductList';
 
-const API_BASE    = 'http://127.0.0.1:8000/api';
+const API_BASE = process.env.REACT_APP_API_BASE || 'https://manipython3.pythonanywhere.com/api';
 const PRODUCTS_URL = `${API_BASE}/products/`;
 const CATS_URL     = `${API_BASE}/categories/`;
 const BRANDS_URL   = `${API_BASE}/brands/`;
